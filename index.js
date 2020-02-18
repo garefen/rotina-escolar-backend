@@ -20,4 +20,4 @@ mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopol
 app.use(routes);
 
 
-app.listen(3333);
+app.listen(process.env.PORT || 3333);
