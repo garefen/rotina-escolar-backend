@@ -15,7 +15,7 @@ module.exports = {
 
     async store(req, res) {
         
-        const { name, userId, date, bullets } = req.body;
+        let { name, userId, date, bullets } = req.body;
 
         const newDate = new Date(date);
         const month = constrains.months[newDate.getMonth()];
@@ -23,6 +23,8 @@ module.exports = {
         const weekday = constrains.week[newDate.getDay()];
         const hrs = newDate.getHours();
         let minutes = newDate.getMinutes();
+
+        bullets = bullets.filter(bullet => bullet !== "");
 
         if (minutes.toString().length < 2) {
             minutes = "0" + minutes.toString();
