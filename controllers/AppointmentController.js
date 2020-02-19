@@ -46,7 +46,7 @@ module.exports = {
     },
 
     async update(req, res) {
-        const { name, id, date, bullets } = req.body;
+        let { name, id, date, bullets } = req.body;
 
         const newDate = new Date(date);
         const month = constrains.months[newDate.getMonth()];
@@ -69,7 +69,7 @@ module.exports = {
             month,
             weekday,
             bullets,
-            date
+            date: newDate
         });
 
         return res.json(appointment);
