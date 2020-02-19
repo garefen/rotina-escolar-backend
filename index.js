@@ -11,7 +11,7 @@ const schedule = require('node-schedule');
 schedule.scheduleJob('00 00 * * *', EraseOldAppointmentsController.index);
 
 const app = express();
-app.use(cors(['http://localhost:3000/', 'https://rotina-escolar.herokuapp.com/']));
+app.use(cors());
 
 app.use(express.json());
 
