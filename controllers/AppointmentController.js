@@ -60,6 +60,7 @@ module.exports = {
         }
         const hour = `${hrs}:${minutes}`;
 
+        bullets = bullets.filter(bullet => bullet !== "");
 
         const appointment = await Appointment.findByIdAndUpdate(id, {
             name,
