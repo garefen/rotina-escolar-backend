@@ -52,7 +52,7 @@ module.exports = {
         const month = constrains.months[newDate.getMonth()];
         const day = newDate.getDate();
         const weekday = constrains.week[newDate.getDay()];
-        const hrs = newDate.getHours();
+        const hrs = newDate.getHours() - 3;
         let minutes = newDate.getMinutes();
 
         if (minutes.toString().length < 2) {
