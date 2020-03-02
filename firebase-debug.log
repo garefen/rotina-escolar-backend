@@ -1,0 +1,47 @@
+[debug] [2020-03-02T16:33:21.569Z] ----------------------------------------------------------------------
+[debug] [2020-03-02T16:33:21.571Z] Command:       /Users/gabriels/.nvm/versions/node/v10.13.0/bin/node /Users/gabriels/.nvm/versions/node/v10.13.0/bin/firebase serve
+[debug] [2020-03-02T16:33:21.571Z] CLI Version:   7.14.0
+[debug] [2020-03-02T16:33:21.571Z] Platform:      darwin
+[debug] [2020-03-02T16:33:21.571Z] Node Version:  v10.13.0
+[debug] [2020-03-02T16:33:21.575Z] Time:          Mon Mar 02 2020 13:33:21 GMT-0300 (Brasilia Standard Time)
+[debug] [2020-03-02T16:33:21.575Z] ----------------------------------------------------------------------
+[debug] [2020-03-02T16:33:21.575Z] 
+[debug] [2020-03-02T16:33:21.584Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-02T16:33:21.585Z] > authorizing via signed-in user
+[debug] [2020-03-02T16:33:21.585Z] [iam] checking project rotina-escolar-backend for permissions ["firebase.projects.get"]
+[debug] [2020-03-02T16:33:21.587Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/rotina-escolar-backend:testIamPermissions  
+
+[debug] [2020-03-02T16:33:22.244Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-02T16:33:22.246Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/rotina-escolar-backend  
+ 
+[debug] [2020-03-02T16:33:22.881Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/gabriels/Desktop/Study/schedule/rotina-escolar-backend'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: functions emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/gabriels/Desktop/Study/schedule/rotina-escolar-backend/functions" for Cloud Functions...
+[debug] [2020-03-02T16:33:22.923Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-02T16:33:22.924Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-02T16:33:22.924Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-02T16:33:22.924Z] [worker-~diagnostic~-bc4bdc3e-fc06-4b4a-b15a-a2df89b29f00]: Assigning socketPath: /var/folders/jz/r389zl4d4d93gzm07tr6hhqr7z0d17/T/fire_emu_26197.sock
+[debug] [2020-03-02T16:33:22.925Z] [worker-~diagnostic~-bc4bdc3e-fc06-4b4a-b15a-a2df89b29f00]: BUSY
+[debug] [2020-03-02T16:33:23.213Z] [runtime-status] [26197] Functions runtime initialized. {"cwd":"/Users/gabriels/Desktop/Study/schedule/rotina-escolar-backend/functions","node_version":"10.13.0"}
+[debug] [2020-03-02T16:33:23.215Z] [runtime-status] [26197] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-02T16:33:23.217Z] [runtime-status] [26197] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/gabriels/Desktop/Study/schedule/rotina-escolar-backend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-02T16:33:23.218Z] [runtime-status] [26197] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/gabriels/Desktop/Study/schedule/rotina-escolar-backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-02T16:33:23.219Z] [runtime-status] [26197] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/gabriels/Desktop/Study/schedule/rotina-escolar-backend/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  Error: Cannot find module './routes'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/Users/gabriels/Desktop/Study/schedule/rotina-escolar-backend/functions/index.js:12:16)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-03-02T16:33:23.401Z] [worker-~diagnostic~-bc4bdc3e-fc06-4b4a-b15a-a2df89b29f00]: exited
+[debug] [2020-03-02T16:33:23.401Z] [worker-~diagnostic~-bc4bdc3e-fc06-4b4a-b15a-a2df89b29f00]: FINISHED
