@@ -21,19 +21,11 @@ module.exports = {
         const month = constrains.months[newDate.getMonth()];
         const day = newDate.getDate();
         const weekday = constrains.week[newDate.getDay()];
-        const hrs = newDate.getHours() - 3;
-        let minutes = newDate.getMinutes();
 
         bullets = bullets.filter(bullet => bullet !== "");
 
-        if (minutes.toString().length < 2) {
-            minutes = "0" + minutes.toString();
-        }
-        const hour = `${hrs}:${minutes}`;
-
         const appointment = await Appointment.create({
             name,
-            hour,
             day,
             month,
             userId,
